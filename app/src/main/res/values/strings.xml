@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">Proyecto_Movil_Crisol</string>
+    <string name="email">Email</string>
+    <string name="dni">DNI</string>
+    <string name="nombres">Nombres</string>
+    <string name="apellidos">Apellidos</string>
+    <string name="pass">Contraseña</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="registrarme">Registrarme</string>
+    <string name="registro">¿No tienes cuenta? Regístrate</string>
+    <string name="inicio">¿Ya tienes una cuenta? Inicia Sesión</string>
+    <string name="description">Imagen</string>
+    <string name="login">Inicia Sesión</string>
+    <string name="form_registro">Registro</string>
+    <string name="perfil">Perfil</string>
+    <string name="principal">Inicio</string>
+    <string name="carrito">Carrito</string>
+    <string name="listado">Mis compras</string>
+
+
 </resources>

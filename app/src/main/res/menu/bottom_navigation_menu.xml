@@ -1,4 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/accion_inicio"
+        android:enabled="true"
+        android:icon="@drawable/inicio"
+        android:title="@string/principal" />
 
+    <item
+        android:id="@+id/accion_carrito"
+        android:enabled="true"
+        android:icon="@drawable/carrito"
+        android:title="@string/carrito" />
+
+    <item
+        android:id="@+id/accion_list"
+        android:enabled="true"
+        android:icon="@drawable/listado"
+        android:title="@string/listado" />
+
+    <item
+        android:id="@+id/accion_perfil"
+        android:enabled="true"
+        android:icon="@drawable/user"
+        android:title="@string/perfil" />
 </menu>
