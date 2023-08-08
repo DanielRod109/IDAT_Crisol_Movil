@@ -23,7 +23,7 @@ class LoginViewModel :ViewModel(){
                 if (response.isSuccessful && response.body() != null) {
                     val body = response.body()!!
                     if (body["message"] == "Inicio de sesión exitoso") {
-                        authenticationResult.value = ResultadoAutenticacion.Exito(body["nombreCliente"] ?: "")
+                        authenticationResult.value = ResultadoAutenticacion.Exito(body["nombreCliente"]?:"",body["id"]?:"")
                     } else {
                         //error de autenticacion
                         authenticationResult.value = ResultadoAutenticacion.Error(body["message"] ?: "Error desconocido")
@@ -40,6 +40,6 @@ class LoginViewModel :ViewModel(){
 
 // Clase para representar los posibles resultados de la autenticación
 sealed class ResultadoAutenticacion {
-    data class Exito(val nombreCliente: String): ResultadoAutenticacion()
+    data class Exito(val nombreCliente: String, val id:String): ResultadoAutenticacion()
     data class Error(val mensajeError: String): ResultadoAutenticacion()
 }

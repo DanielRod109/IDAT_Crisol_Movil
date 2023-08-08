@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph">
+
+    <!-- Home Fragment -->
+    <fragment
+        android:id="@+id/perfilFragment"
+        android:name="com.example.proyecto_movil_crisol.ui.PerfilFragment"
+        android:label="Perfil"
+        >
+        <!-- Accion para ir a catalogo Fragment -->
+        <action
+            android:id="@+id/action_to_catalogoFragment"
+            app:destination="@id/catalogoFragment" />
+    </fragment>
+
+    <!-- catalogo Fragment -->
+    <fragment
+        android:id="@+id/catalogoFragment"
+        android:name="com.example.proyecto_movil_crisol.ui.CatalagoFragment"
+        android:label="Catálogo" />
+
+</navigation>

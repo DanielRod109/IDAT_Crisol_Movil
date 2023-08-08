@@ -5,17 +5,11 @@ import retrofit2.Response
 import retrofit2.http.*
 
 interface ClienteService {
-    @GET("cliente/listar")
-    suspend fun getClientes(): Response<List<Cliente>>
-
     @POST("cliente/crear")
     suspend fun crearCliente(@Body nuevoCliente: Cliente): Response<Map<String, String>>
 
     @PUT("cliente/editar/{clienteId}")
-    suspend fun editarCliente(@Path("clienteId") clienteId: Int, @Body cliente: Cliente): Response<String>
-
-    @DELETE("cliente/eliminar/{clienteId}")
-    suspend fun eliminarCliente(@Path("clienteId") clienteId: Int): Response<String>
+    suspend fun editarCliente(@Body cliente: Cliente, @Path("clienteId") clienteId: Int): Response<Map<String, String>>
 
     @GET("cliente/buscar/{clienteId}")
     suspend fun buscarCliente(@Path("clienteId") clienteId: Int): Response<Cliente>
