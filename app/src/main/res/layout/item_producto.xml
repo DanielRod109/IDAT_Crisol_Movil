@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+<ImageView
+    android:id="@+id/imagen"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_gravity="center"
+    android:contentDescription="Imagen Libro"
+    android:scaleType="fitCenter"
+    android:src="@drawable/ic_launcher_foreground" />
+
+
+<TextView
+    android:id="@+id/nombre"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:gravity="center"
+    android:text="Nombre del Libro"
+    android:textSize="16sp"
+    android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/autor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Autor"
+        android:textSize="16sp"
+        android:textStyle="normal" />
+
+<TextView
+    android:id="@+id/precio"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:gravity="center"
+    android:text="S/. 0.00"
+    android:textSize="14sp" />
+
+</LinearLayout>

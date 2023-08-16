@@ -14,6 +14,12 @@ class PrincipalActivity : AppCompatActivity() {
         binding = ActivityPrincipalBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        if (savedInstanceState == null) {
+            // Inicia con el CatalagoFragment por defecto
+            val transaction = supportFragmentManager.beginTransaction()
+            transaction.replace(R.id.fragment_container, CatalagoFragment()) // 'container' es el ID del FrameLayout que alojaría los fragments
+            transaction.commit()
+        }
         fun loadFragment(fragment: Fragment) {
             val transaction = supportFragmentManager.beginTransaction()
             transaction.replace(R.id.fragment_container, fragment)
